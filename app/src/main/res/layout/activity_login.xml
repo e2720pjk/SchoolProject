@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lhu.edu.schoolproject.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/login"
+        android:id="@+id/bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="54dp"
+            android:id="@+id/btn_login"
+            android:background="#000000ff"
+            android:minHeight="65dp"
+            android:minWidth="200dp"
+            android:layout_above="@+id/btn_register"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:minHeight="50dp"
+            android:background="#000000ff"
+            android:id="@+id/btn_register"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/btn_login"
+            android:layout_alignEnd="@+id/btn_login" />
+    </RelativeLayout>
+
+</FrameLayout>

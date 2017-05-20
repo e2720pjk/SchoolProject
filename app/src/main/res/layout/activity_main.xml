@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="lhu.edu.schoolproject.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/Main_imageView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000ff"
+            android:id="@+id/btn_weather"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btn_family"
+            android:layout_toEndOf="@+id/btn_family"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="18dp"
+            android:minHeight="60dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000ff"
+            android:id="@+id/btn_setting"
+            android:layout_alignBaseline="@+id/btn_weather"
+            android:layout_alignBottom="@+id/btn_weather"
+            android:layout_toLeftOf="@+id/btn_family"
+            android:layout_toStartOf="@+id/btn_family"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:minHeight="60dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000ff"
+            android:id="@+id/btn_family"
+            android:layout_above="@+id/btn_weather"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="58dp"
+            android:minHeight="80dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sos"
+            android:background="#000000ff"
+            android:layout_marginBottom="98dp"
+            android:layout_above="@+id/btn_family"
+            android:layout_alignLeft="@+id/btn_weather"
+            android:layout_alignStart="@+id/btn_weather"
+            android:minHeight="80dp"
+            android:minWidth="100dip" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_hs"
+            android:background="#000000ff"
+            android:layout_alignBottom="@+id/btn_sos"
+            android:layout_alignLeft="@+id/btn_setting"
+            android:layout_alignStart="@+id/btn_setting"
+            android:layout_toStartOf="@+id/btn_family"
+            android:layout_toLeftOf="@+id/btn_family"
+            android:minHeight="80dp"
+            android:minWidth="120dp" />
+    </RelativeLayout>
+
+</FrameLayout>
